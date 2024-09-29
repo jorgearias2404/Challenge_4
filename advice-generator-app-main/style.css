@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Dark_Blue);
+    font-family: 'Manrope';
+    font-weight: 800;
+}
+:root{
+
+    /* ### Primary */
+
+--Light_Cyan: hsl(193, 38%, 86%);
+--Neon_Green: hsl(150, 100%, 66%);
+
+   /* ### Neutral */
+
+--Grayish_Blue: hsl(217, 19%, 38%);
+--Dark_Grayish_Blue: hsl(217, 19%, 24%);
+--Dark_Blue: hsl(218, 23%, 16%);
+}
+.Container{
+    display: flex;
+    justify-content: center;
+   flex-direction: column;
+   padding: 2rem;
+   background-color: var(--Dark_Grayish_Blue);
+   border-radius: 2rem;
+   margin-bottom: 5rem;
+   color: var(--Light_Cyan);
+   position: relative;
+   width: 30rem;
+}
+.Container #advice{
+    display: flex;
+    color: var(--Neon_Green);
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.Container #advice_message{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--Light_Cyan);
+}
+.Container #divider{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.Container figure{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    background-color: var(--Neon_Green);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+      bottom: -2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: 0.5s;
+}
+.Container figure:hover{
+  box-shadow: 0 0 2rem var(--Neon_Green);
+}
+#loading{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+.Container figure img{
+    display: flex;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    transition: 0.5s;
+}
+.attribution {
+    color: var(--Light_Cyan);
+    font-size: 1rem;
+}
+.attribution a{
+   text-decoration: none;
+   color: var(--Neon_Green);
+}
